@@ -4,6 +4,7 @@
 //
 
 #import "TAPromoteeViewController.h"
+#import "TAPromoteeApp.h"
 
 
 @interface TAPromoteeViewController ()
@@ -18,21 +19,19 @@
 @property (nonatomic, strong) UILabel *priceLabel;
 @property (nonatomic, strong) UILabel *captionLabel;
 
+@property (nonatomic, strong) TAPromoteeApp *promoteeApp;
+
 @end
 
 @implementation TAPromoteeViewController {
 
 }
 
-- (instancetype)initWithAppStoreId:(NSString *)appStoreId name:(NSString *)name caption:(NSString *)caption backgroundImage:(UIImage *)backgroundImage iconImage:(UIImage *)iconImage
+- (instancetype)initWithApp:(TAPromoteeApp *)promoteeApp
 {
     self = [super init];
     if (self) {
-        self.appStoreId = appStoreId;
-        self.name = name;
-        self.caption = caption;
-        self.backgroundImage = backgroundImage;
-        self.iconImage = iconImage;
+        self.promoteeApp = promoteeApp;
     }
 
     return self;
@@ -42,9 +41,9 @@
 {
     [super viewDidLoad];
 
-    self.backgroundImageView = [[UIImageView alloc] initWithImage: self.backgroundImage];
+    self.backgroundImageView = [[UIImageView alloc] initWithImage: self.promoteeApp.backgroundImage];
 
-    self.iconImageView = [[UIImageView alloc] initWithImage: self.iconImage];
+    self.iconImageView = [[UIImageView alloc] initWithImage: self.promoteeApp.iconImage];
     self.iconImageView.layer.borderColor = [UIColor whiteColor].CGColor;
     self.iconImageView.layer.borderWidth = 2.0f;
     self.iconImageView.layer.masksToBounds = YES;
@@ -65,7 +64,7 @@
 
 
     self.nameLabel = [[UILabel alloc] init];
-    self.nameLabel.text = self.name;
+    self.nameLabel.text = self.promoteeApp.name;
     self.nameLabel.font = [UIFont boldSystemFontOfSize:22];
 
     self.priceLabel = [[UILabel alloc] init];
@@ -73,7 +72,7 @@
     self.priceLabel.font = [UIFont systemFontOfSize:10];
 
     self.captionLabel = [[UILabel alloc] init];
-    self.captionLabel.text = self.caption;
+    self.captionLabel.text = self.promoteeApp.caption;
     self.captionLabel.font = [UIFont systemFontOfSize:17];
 
 
@@ -214,12 +213,6 @@
 - (BOOL)prefersStatusBarHidden
 {
     return YES;
-}
-
-
-- (void)dealloc
-{
-    NSLog(@"dealloc");
 }
 
 

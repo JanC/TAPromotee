@@ -7,21 +7,45 @@
 //
 
 #import "ViewController.h"
+#import "TAPromoteeViewController.h"
+#import "TAPromoteeApp.h"
 
-@interface ViewController ()
+@interface ViewController () <TAPromoteeViewControllerDelegate>
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+#pragma mark - Actions
+
+-(IBAction) showAddButtonAction
+{
+    TAPromoteeApp *promoteeApp = [TAPromoteeApp appWithAppStoreId:@"937151343"
+                                name:@"PStats: Battlefield"
+                             caption:@"Your Battlefield soldier's companion"
+                           iconImage:[UIImage imageNamed:@"sample-app-icon"]
+                     backgroundImage:[UIImage imageNamed:@"sample-app-background"]];
+
+    TAPromoteeViewController *promoteeViewController = [[TAPromoteeViewController alloc] initWithApp:promoteeApp];
+    promoteeViewController.delegate = self;
+
+
+    [self presentViewController:promoteeViewController animated:YES completion:^{
+
+    }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - TAPromoteeViewControllerDelegate
+
+- (void)promoteeViewControllerDidClickInstall:(TAPromoteeViewController *)viewController
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (void)promoteeViewControllerDidClickClose:(TAPromoteeViewController *)viewController
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 @end

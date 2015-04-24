@@ -13,6 +13,7 @@
 		3DA387671AEAC92D009612AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA387651AEAC92D009612AC /* Main.storyboard */; };
 		3DA387691AEAC92D009612AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA387681AEAC92D009612AC /* Images.xcassets */; };
 		3DA3876C1AEAC92D009612AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3876A1AEAC92D009612AC /* LaunchScreen.xib */; };
+		4E9EB6C9B90F741262F21D4C /* libPods-TAPromotee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF9A97AF13484EAD44A1347 /* libPods-TAPromotee.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		3DA387661AEAC92D009612AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DA387681AEAC92D009612AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3DA3876B1AEAC92D009612AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CCF9A97AF13484EAD44A1347 /* libPods-TAPromotee.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAPromotee.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5452D0E20FC7B8C0BDBCF8 /* Pods-TAPromotee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAPromotee.release.xcconfig"; path = "Pods/Target Support Files/Pods-TAPromotee/Pods-TAPromotee.release.xcconfig"; sourceTree = "<group>"; };
+		FEE09D6B0202F73FFA672B1D /* Pods-TAPromotee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAPromotee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAPromotee/Pods-TAPromotee.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E9EB6C9B90F741262F21D4C /* libPods-TAPromotee.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				3DA3875A1AEAC92D009612AC /* TAPromotee */,
 				3DA387591AEAC92D009612AC /* Products */,
+				F6283262D28CD90FFE73EB8D /* Pods */,
+				B083174A257A45C7D47EF653 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B083174A257A45C7D47EF653 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCF9A97AF13484EAD44A1347 /* libPods-TAPromotee.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6283262D28CD90FFE73EB8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEE09D6B0202F73FFA672B1D /* Pods-TAPromotee.debug.xcconfig */,
+				EE5452D0E20FC7B8C0BDBCF8 /* Pods-TAPromotee.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DA3877B1AEAC92D009612AC /* Build configuration list for PBXNativeTarget "TAPromotee" */;
 			buildPhases = (
+				8ED6CDDFE68D262CE8F61BB5 /* Check Pods Manifest.lock */,
 				3DA387541AEAC92D009612AC /* Sources */,
 				3DA387551AEAC92D009612AC /* Frameworks */,
 				3DA387561AEAC92D009612AC /* Resources */,
+				8FC6FA64F295A79A29A3E064 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +169,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8ED6CDDFE68D262CE8F61BB5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8FC6FA64F295A79A29A3E064 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAPromotee/Pods-TAPromotee-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DA387541AEAC92D009612AC /* Sources */ = {
@@ -259,6 +318,7 @@
 		};
 		3DA3877C1AEAC92D009612AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEE09D6B0202F73FFA672B1D /* Pods-TAPromotee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TAPromotee/Info.plist;
@@ -269,6 +329,7 @@
 		};
 		3DA3877D1AEAC92D009612AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE5452D0E20FC7B8C0BDBCF8 /* Pods-TAPromotee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TAPromotee/Info.plist;

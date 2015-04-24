@@ -6,6 +6,7 @@
 #import <Foundation/Foundation.h>
 
 @class TAPromoteeViewController;
+@class TAPromoteeApp;
 
 @protocol TAPromoteeViewControllerDelegate <NSObject>
 
@@ -16,15 +17,11 @@
 
 @interface TAPromoteeViewController : UIViewController
 
-@property (nonatomic, strong) NSString *appStoreId; // App id from app store
-@property (nonatomic, strong) NSString *name; // App id from app store
-@property (nonatomic, strong) NSString *caption; // App id from app store
-@property (nonatomic, strong) UIImage *backgroundImage;
-@property (nonatomic, strong) UIImage *iconImage;
+
 
 @property (nonatomic, weak) id<TAPromoteeViewControllerDelegate> delegate;
 
-- (instancetype)initWithAppStoreId:(NSString *)appStoreId name:(NSString *)name caption:(NSString *)caption backgroundImage:(UIImage *)backgroundImage iconImage:(UIImage *)iconImage;
+- (instancetype)initWithApp:(TAPromoteeApp *)promoteeApp;
 
 
 @end

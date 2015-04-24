@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+-(IBAction) showAddButtonAction;
+
 
 @end
 
