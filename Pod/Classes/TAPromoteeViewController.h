@@ -10,8 +10,8 @@
 
 @protocol TAPromoteeViewControllerDelegate <NSObject>
 
--(void) promoteeViewControllerDidClickInstall:(TAPromoteeViewController *) viewController;
--(void) promoteeViewControllerDidClickClose:(TAPromoteeViewController *) viewController;
+- (void)promoteeViewControllerFinish:(TAPromoteeViewController *)viewController;
+- (void)promoteeViewControllerDidClose:(TAPromoteeViewController *)viewController;
 
 @end
 

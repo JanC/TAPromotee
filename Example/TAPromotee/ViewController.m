@@ -20,7 +20,7 @@
 
 -(IBAction) showAddButtonAction
 {
-    TAPromoteeApp *promoteeApp = [TAPromoteeApp appWithAppStoreId:@"937151343"
+    TAPromoteeApp *promoteeApp = [TAPromoteeApp appWithAppStoreId:822702909 //937151343
                                 name:@"PStats: Battlefield"
                              caption:@"Your Battlefield soldier's companion"
                            iconImage:[UIImage imageNamed:@"sample-app-icon"]
@@ -37,12 +37,12 @@
 
 #pragma mark - TAPromoteeViewControllerDelegate
 
-- (void)promoteeViewControllerDidClickInstall:(TAPromoteeViewController *)viewController
+- (void)promoteeViewControllerFinish:(TAPromoteeViewController *)viewController
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)promoteeViewControllerDidClickClose:(TAPromoteeViewController *)viewController
+- (void)promoteeViewControllerDidClose:(TAPromoteeViewController *)viewController
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

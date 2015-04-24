@@ -9,7 +9,7 @@
 
 }
 
-- (instancetype)initWithAppStoreId:(NSString *)appStoreId name:(NSString *)name caption:(NSString *)caption iconImage:(UIImage *)iconImage backgroundImage:(UIImage *)backgroundImage
+- (instancetype)initWithAppStoreId:(NSInteger)appStoreId name:(NSString *)name caption:(NSString *)caption iconImage:(UIImage *)iconImage backgroundImage:(UIImage *)backgroundImage
 {
     self = [super init];
     if (self) {
@@ -23,9 +23,20 @@
     return self;
 }
 
-+ (instancetype)appWithAppStoreId:(NSString *)appStoreId name:(NSString *)name caption:(NSString *)caption iconImage:(UIImage *)iconImage backgroundImage:(UIImage *)backgroundImage
++ (instancetype)appWithAppStoreId:(NSInteger)appStoreId name:(NSString *)name caption:(NSString *)caption iconImage:(UIImage *)iconImage backgroundImage:(UIImage *)backgroundImage
 {
     return [[self alloc] initWithAppStoreId:appStoreId name:name caption:caption iconImage:iconImage backgroundImage:backgroundImage];
 }
+
+- (NSString *)campaignToken
+{
+    return _campaignToken ? _campaignToken : @"";
+}
+
+- (NSString *)affiliateToken
+{
+    return _affiliateToken ? _affiliateToken : @"";
+}
+
 
 @end

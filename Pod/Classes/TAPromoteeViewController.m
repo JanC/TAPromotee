@@ -6,8 +6,10 @@
 #import "TAPromoteeViewController.h"
 #import "TAPromoteeApp.h"
 
+@import StoreKit;
 
-@interface TAPromoteeViewController ()
+
+@interface TAPromoteeViewController () <SKStoreProductViewControllerDelegate>
 
 @property(nonatomic, strong) UIImageView *backgroundImageView;
 @property(nonatomic, strong) UIImageView *iconImageView;
@@ -199,20 +201,63 @@
 - (void)closeButtonAction:(id)sender
 {
     if(self.delegate) {
-        [self.delegate promoteeViewControllerDidClickClose:self];
+        [self.delegate promoteeViewControllerDidClose:self];
     }
 }
 
 - (void)installButtonAction:(id)sender
 {
-    if(self.delegate) {
-        [self.delegate promoteeViewControllerDidClickInstall:self];
-    }
+
+    [self openAppWithStoreKit];
 }
+
+#pragma mark - Private
+
+-(void) openAppWithStoreKit
+{
+
+    [self.installButton setTitle:@"   Opening...   " forState:UIControlStateNormal];
+    self.installButton.enabled = NO;
+
+    SKStoreProductViewController* storeViewController = [[SKStoreProductViewController alloc] init];
+    storeViewController.delegate = self;
+    NSDictionary *parameters = @{
+            SKStoreProductParameterITunesItemIdentifier : @(self.promoteeApp.appStoreId),
+            SKStoreProductParameterAffiliateToken : self.promoteeApp.affiliateToken,
+            SKStoreProductParameterCampaignToken : self.promoteeApp.campaignToken
+    };
+    [storeViewController loadProductWithParameters:parameters completionBlock:^(BOOL result, NSError *error) {
+
+        [self.installButton setTitle:@"   Install   " forState:UIControlStateNormal];
+        self.installButton.enabled = YES;
+
+        [self presentViewController:storeViewController animated:YES completion:^{
+
+        }];
+    }];
+}
+
+- (void)productViewControllerDidFinish:(SKStoreProductViewController *)viewController
+{
+
+   [self dismissViewControllerAnimated:NO completion:^{
+       if(self.delegate) {
+           [self.delegate promoteeViewControllerDidClose:self];
+       }
+   }];
+}
+
+
+#pragma mark - Overrides
 
 - (BOOL)prefersStatusBarHidden
 {
     return YES;
+}
+
+- (void)dealloc
+{
+    NSLog(@"dealloc");
 }
 
 
