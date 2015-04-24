@@ -56,7 +56,7 @@
     [self.closeButton addTarget:self action:@selector(closeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 
     self.installButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [self.installButton setTitle:@"   Install   " forState:UIControlStateNormal];
+    [self.installButton setTitle:@"Install" forState:UIControlStateNormal];
     [self.installButton addTarget:self action:@selector(installButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     self.installButton.backgroundColor = [UIColor colorWithRed:0.3 green:0.85 blue:0.39 alpha:1];
 
@@ -100,7 +100,11 @@
 
 
     NSDictionary *views = NSDictionaryOfVariableBindings(_closeButton, _installButton, _backgroundImageView, _captionLabel, _priceLabel, _nameLabel, _iconImageView);
-    NSDictionary *metrics = @{ @"TACloseButtonSize" : @60};
+    NSDictionary *metrics = @{
+            @"TACloseButtonSize" : @60,
+            @"TAInstallButtonWidth" : @100,
+            @"TAVerticalSpacing" : @20
+    };
 
     // close button top right
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[_closeButton(TACloseButtonSize)]|" options:0 metrics:metrics views:views]];
@@ -124,7 +128,8 @@
                                                           attribute:NSLayoutAttributeCenterX
                                                          multiplier:1.0 constant:0]];
 
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_installButton]-(20)-|" options:0 metrics:metrics views:views]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_installButton]-(TAVerticalSpacing)-|" options:0 metrics:metrics views:views]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[_installButton(TAInstallButtonWidth)]" options:0 metrics:metrics views:views]];
 
 
     // app icon center
@@ -182,7 +187,7 @@
 
 
 
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_iconImageView]-[_nameLabel]-[_priceLabel]-(20)-[_captionLabel]" options:0 metrics:metrics views:views]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_iconImageView]-[_nameLabel]-[_priceLabel]-(TAVerticalSpacing)-[_captionLabel]" options:0 metrics:metrics views:views]];
 
 
 
@@ -216,7 +221,7 @@
 -(void) openAppWithStoreKit
 {
 
-    [self.installButton setTitle:@"   Opening...   " forState:UIControlStateNormal];
+    [self.installButton setTitle:@"Opening..." forState:UIControlStateNormal];
     self.installButton.enabled = NO;
 
     SKStoreProductViewController* storeViewController = [[SKStoreProductViewController alloc] init];
@@ -228,7 +233,7 @@
     };
     [storeViewController loadProductWithParameters:parameters completionBlock:^(BOOL result, NSError *error) {
 
-        [self.installButton setTitle:@"   Install   " forState:UIControlStateNormal];
+        [self.installButton setTitle:@"Install" forState:UIControlStateNormal];
         self.installButton.enabled = YES;
 
         [self presentViewController:storeViewController animated:YES completion:^{
