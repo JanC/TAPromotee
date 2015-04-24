@@ -1,0 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+target 'TSMessages', :exclusive => true do
+  pod "TSMessages", :path => "../"
+  pod 'AdColony', '2.2.4'
+end
+
+target 'Tests', :exclusive => true do
+  pod "TSMessages", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+end
