@@ -1,10 +1,10 @@
 //
 // Created by Jan on 24/04/15.
-// Copyright (c) 2015 SponsorPay. All rights reserved.
 //
 
 #import "TAPromoteeViewController.h"
 #import "TAPromoteeApp.h"
+#import "TACloseButton.h"
 
 @import StoreKit;
 
@@ -51,8 +51,8 @@
     self.iconImageView.layer.masksToBounds = YES;
 
 
-    self.closeButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [self.closeButton setTitle:@"No Thanks" forState:UIControlStateNormal];
+
+    self.closeButton = [[TACloseButton alloc] init];
     [self.closeButton addTarget:self action:@selector(closeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 
     self.installButton = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -100,11 +100,11 @@
 
 
     NSDictionary *views = NSDictionaryOfVariableBindings(_closeButton, _installButton, _backgroundImageView, _captionLabel, _priceLabel, _nameLabel, _iconImageView);
-    NSDictionary *metrics = @{};
+    NSDictionary *metrics = @{ @"TACloseButtonSize" : @60};
 
     // close button top right
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[_closeButton]-|" options:0 metrics:metrics views:views]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(20)-[_closeButton]" options:0 metrics:metrics views:views]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[_closeButton(TACloseButtonSize)]|" options:0 metrics:metrics views:views]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_closeButton(TACloseButtonSize)]" options:0 metrics:metrics views:views]];
 
     // background image fill half of screen
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_backgroundImageView]|" options:0 metrics:metrics views:views]];
@@ -191,7 +191,7 @@
 
 - (void)viewDidLayoutSubviews
 {
-    self.iconImageView.layer.cornerRadius = CGRectGetWidth(self.iconImageView.frame)/2;
+    self.iconImageView.layer.cornerRadius = CGRectGetWidth(self.iconImageView.frame)/8;
     [super viewDidLayoutSubviews];
 }
 
