@@ -20,15 +20,21 @@
 
 -(IBAction) showAddButtonAction
 {
-    TAPromoteeApp *promoteeApp = [TAPromoteeApp appWithAppStoreId:822702909 name:@"PStats: Battlefield" price:@"FREE" caption:@"Your Battlefield soldier's companion" iconImage:[UIImage imageNamed:@"sample-app-icon"] backgroundImage:[UIImage imageNamed:@"sample-app-background"]];
+    TAPromoteeApp *promoteeApp = [TAPromoteeApp appWithAppStoreId:937151343
+                                                          caption:@"Your Battlefield soldier's companion"
+                                                  backgroundImage:[UIImage imageNamed:@"sample-app-background"]];
 
-    TAPromoteeViewController *promoteeViewController = [[TAPromoteeViewController alloc] initWithApp:promoteeApp];
-    promoteeViewController.delegate = self;
+    [promoteeApp fetchAppStoreResourcesWithCompletion:^(NSError *error) {
 
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
 
-    [self presentViewController:promoteeViewController animated:YES completion:^{
-
+            TAPromoteeViewController *promoteeViewController = [[TAPromoteeViewController alloc] initWithApp:promoteeApp];
+            promoteeViewController.delegate = self;
+            [self presentViewController:promoteeViewController animated:YES completion:^{ }];
+        }];
     }];
+
+
 }
 
 #pragma mark - TAPromoteeViewControllerDelegate
