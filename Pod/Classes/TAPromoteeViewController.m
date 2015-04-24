@@ -70,7 +70,7 @@
     self.nameLabel.font = [UIFont boldSystemFontOfSize:22];
 
     self.priceLabel = [[UILabel alloc] init];
-    self.priceLabel.text = @"FREE - available on the App Store";
+    self.priceLabel.text = [NSString stringWithFormat:@"%@ - available on the App Store", self.promoteeApp.price];
     self.priceLabel.font = [UIFont systemFontOfSize:10];
 
     self.captionLabel = [[UILabel alloc] init];

@@ -20,11 +20,7 @@
 
 -(IBAction) showAddButtonAction
 {
-    TAPromoteeApp *promoteeApp = [TAPromoteeApp appWithAppStoreId:822702909 //937151343
-                                name:@"PStats: Battlefield"
-                             caption:@"Your Battlefield soldier's companion"
-                           iconImage:[UIImage imageNamed:@"sample-app-icon"]
-                     backgroundImage:[UIImage imageNamed:@"sample-app-background"]];
+    TAPromoteeApp *promoteeApp = [TAPromoteeApp appWithAppStoreId:822702909 name:@"PStats: Battlefield" price:@"FREE" caption:@"Your Battlefield soldier's companion" iconImage:[UIImage imageNamed:@"sample-app-icon"] backgroundImage:[UIImage imageNamed:@"sample-app-background"]];
 
     TAPromoteeViewController *promoteeViewController = [[TAPromoteeViewController alloc] initWithApp:promoteeApp];
     promoteeViewController.delegate = self;
