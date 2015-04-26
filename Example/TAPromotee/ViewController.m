@@ -37,10 +37,10 @@
 -(IBAction) showWithCustomBackgroundAction
 {
 
-    [TAPromotee showFromViewController:self
-                                 appId:937151343
-                               caption:@"Your Battlefield soldier's companion"
-                       backgroundImage:[UIImage imageNamed:@"sample-app-background"]];
+[TAPromotee showFromViewController:self
+                             appId:937151343
+                           caption:@"Your Battlefield soldier's companion"
+                   backgroundImage:[UIImage imageNamed:@"sample-app-background"]];
 }
 
 #pragma mark - TAPromoteeViewControllerDelegate
