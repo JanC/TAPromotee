@@ -12,6 +12,8 @@
 
 -(IBAction) showAddButtonAction;
 
+-(IBAction) showWithCustomBackgroundAction;
+
 
 @end
 

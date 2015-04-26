@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fc7-OL-DKG">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Promotee-->
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p88-wD-ukR">
-                                <rect key="frame" x="277" y="285" width="62" height="30"/>
+                                <rect key="frame" x="269" y="210" width="62" height="30"/>
                                 <state key="normal" title="Show Ad">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -25,11 +26,23 @@
                                     <action selector="showAddButtonAction" destination="vXZ-lx-hvc" eventType="touchUpInside" id="09F-44-SF2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bs-ft-5Ga">
+                                <rect key="frame" x="214" y="285" width="173" height="30"/>
+                                <state key="normal" title="Show with custom image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAddButtonAction" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1sb-pU-g4U"/>
+                                    <action selector="showWithCustomBackgroundAction" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8Se-rz-65K"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="p88-wD-ukR" secondAttribute="centerY" id="mhs-dy-EGT"/>
-                            <constraint firstAttribute="centerX" secondItem="p88-wD-ukR" secondAttribute="centerX" constant="-8" id="pbW-C2-kwc"/>
+                            <constraint firstAttribute="centerY" secondItem="1Bs-ft-5Ga" secondAttribute="centerY" id="4rs-dy-wsG"/>
+                            <constraint firstAttribute="centerX" secondItem="1Bs-ft-5Ga" secondAttribute="centerX" constant="-0.5" id="FSF-nd-TNt"/>
+                            <constraint firstAttribute="centerY" secondItem="p88-wD-ukR" secondAttribute="centerY" multiplier="4/3" id="mhs-dy-EGT"/>
+                            <constraint firstAttribute="centerX" secondItem="p88-wD-ukR" secondAttribute="centerX" id="pbW-C2-kwc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Promotee" id="bzT-dQ-bOr"/>

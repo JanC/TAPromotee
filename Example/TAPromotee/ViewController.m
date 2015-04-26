@@ -16,18 +16,31 @@
 
 @implementation ViewController
 
+
+- (void)viewDidLoad
+{
+    [TAPromotee setDelegate:self];
+    [super viewDidLoad];
+}
+
 #pragma mark - Actions
 
 -(IBAction) showAddButtonAction
 {
 
-    [TAPromotee setDelegate:self];
+    [TAPromotee showFromViewController:self
+                                 appId:822702909
+                               caption:@"Sun clock in your pocket"];
+
+}
+
+-(IBAction) showWithCustomBackgroundAction
+{
 
     [TAPromotee showFromViewController:self
                                  appId:937151343
                                caption:@"Your Battlefield soldier's companion"
-                        backgrounImage:[UIImage imageNamed:@"sample-app-background"]];
-
+                       backgroundImage:[UIImage imageNamed:@"sample-app-background"]];
 }
 
 #pragma mark - TAPromoteeViewControllerDelegate
@@ -41,6 +54,8 @@
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+
 
 
 @end

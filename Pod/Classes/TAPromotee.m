@@ -28,10 +28,10 @@
 
 + (void)showFromViewController:(UIViewController *)viewController appId:(NSInteger)appId caption:(NSString *)caption
 {
-    [self showFromViewController:viewController appId:appId caption:caption backgrounImage:nil];
+    [self showFromViewController:viewController appId:appId caption:caption backgroundImage:nil];
 }
 
-+ (void)showFromViewController:(UIViewController *)viewController appId:(NSInteger)appId caption:(NSString *)caption backgrounImage:(UIImage *)backgroundImage
++ (void)showFromViewController:(UIViewController *)viewController appId:(NSInteger)appId caption:(NSString *)caption backgroundImage:(UIImage *)backgroundImage
 {
     TAPromoteeApp *promoteeApp = [TAPromoteeApp appWithAppStoreId:appId
                                                           caption:caption

@@ -13,7 +13,7 @@
 
 + (void)setDelegate:(id<TAPromoteeDelegate>)delegate;
 
-+ (void)showFromViewController:(UIViewController *)viewController appId:(NSInteger)appId caption:(NSString *)caption backgrounImage:(UIImage *)backgroundImage;
++ (void)showFromViewController:(UIViewController *)viewController appId:(NSInteger)appId caption:(NSString *)caption backgroundImage:(UIImage *)backgroundImage;
 
 + (void)showFromViewController:(UIViewController *)viewController appId:(NSInteger)appId caption:(NSString *)caption;
 
