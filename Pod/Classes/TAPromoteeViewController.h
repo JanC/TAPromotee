@@ -7,7 +7,7 @@
 @class TAPromoteeViewController;
 @class TAPromoteeApp;
 
-@protocol TAPromoteeViewControllerDelegate <NSObject>
+@protocol TAPromoteeDelegate <NSObject>
 
 - (void)promoteeViewControllerFinish:(TAPromoteeViewController *)viewController;
 - (void)promoteeViewControllerDidClose:(TAPromoteeViewController *)viewController;
@@ -18,7 +18,7 @@
 
 
 
-@property (nonatomic, weak) id<TAPromoteeViewControllerDelegate> delegate;
+@property (nonatomic, weak) id<TAPromoteeDelegate> delegate;
 
 - (instancetype)initWithApp:(TAPromoteeApp *)promoteeApp;
 

@@ -50,14 +50,27 @@
         self.price = response[@"formattedPrice"];
 
         NSString *iconURLString = response[@"artworkUrl512"];
+        NSString *screenShotURLString = [response[@"screenshotUrls"] firstObject];
 
-        // get the image
-        NSURLSession *session = [NSURLSession sharedSession];
-        [[session dataTaskWithURL:[NSURL URLWithString:iconURLString] completionHandler:^(NSData *data, NSURLResponse *imageResponse, NSError *imageError) {
+        [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:iconURLString] completionHandler:^(NSData *data, NSURLResponse *imageResponse, NSError *imageError) {
             if (!imageError) {
                 self.iconImage = [UIImage imageWithData:data];
             }
-            completion(error);
+
+            if (self.backgroundImage) {
+                completion(nil);
+                return;
+            }
+
+
+            [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:screenShotURLString] completionHandler:^(NSData *data, NSURLResponse *imageResponse, NSError *imageError) {
+                if (!imageError) {
+                    self.backgroundImage = [UIImage imageWithData:data];
+                }
+                completion(nil);
+            }] resume];
+
+
         }] resume];
     }];
 

@@ -7,270 +7,294 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D713C454B1574E16109C0CC /* TAITunesClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B899F09E165EF0858D40FA9 /* TAITunesClient.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		0EAD83CB5EA66674812B21A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F5FFB1DD3A6CC0BB269E90 /* Foundation.framework */; };
-		2B2CCE19500309D1628BBECD /* TACloseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7B213BE30916BB9513845 /* TACloseButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		382E50DA48EBF86257E385E9 /* Pods-TAPromotee-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1A9E5B4080591E97106466 /* Pods-TAPromotee-dummy.m */; };
-		6C31ECC239389CEAB1937D55 /* TAPromoteeApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 661DC4BB950E10BF63D8F3CA /* TAPromoteeApp.h */; };
-		8899564EA7920624EB987D76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F5FFB1DD3A6CC0BB269E90 /* Foundation.framework */; };
-		8BB594D33214561AFF3265B5 /* TACloseButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E2206276BF042A776C6AE030 /* TACloseButton.h */; };
-		C03E41DCC32C273EC63C4E7C /* Pods-TAPromotee-TAPromotee-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8BCF9996E9B8A4E128220B /* Pods-TAPromotee-TAPromotee-dummy.m */; };
-		D0055CCDD881E544485E7BBD /* TAPromoteeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 81865FD5B5B8054B2B2C94E2 /* TAPromoteeViewController.h */; };
-		DB1BB5D55599C0A6733A7C64 /* TAPromoteeApp.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B15C7869F11DE5C4389C0 /* TAPromoteeApp.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E8BDEEDBD7926DD3472BCFD0 /* TAITunesClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 409EA0D59206F655F8BEBA9D /* TAITunesClient.h */; };
-		F06713893236F2EDFE0B4925 /* TAPromoteeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C470242F745A19152B3A8EC4 /* TAPromoteeViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		004B43882601A9FE97E00D25 /* TAITunesClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E12963E4C9CAA60B443DCE4 /* TAITunesClient.h */; };
+		06067D6E952DA1E13BD0FE87 /* TAPromotee.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B919F85D3C1F86F92DA0899 /* TAPromotee.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1272976F7C744F2DA7D18894 /* TAPromoteeApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F7D6724E8AD03F095DAC63 /* TAPromoteeApp.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		214ACD275D3529B52336BDEF /* TAPromotee.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A5D948ABED6E6F71E8EB89 /* TAPromotee.h */; };
+		29403BAE49105E7724514D25 /* TACloseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B91FEC1E2A5C8B9343397 /* TACloseButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2FA200C8EA747DF8C14F82EC /* TACloseButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B92C595BA483AE705BA93844 /* TACloseButton.h */; };
+		4D9579E795D4105BB45B8152 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E74D598CB7501C2B87CEED7 /* Foundation.framework */; };
+		511769F6BFFF9A48BB0A227F /* TAPromoteeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4564845CBAC2F966A47F9E21 /* TAPromoteeViewController.h */; };
+		53F9F7E6FDE303A63172931C /* TAPromoteeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C11AD2769A5E3C837BB65 /* TAPromoteeViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6A6ACB289265569E581155D9 /* Pods-TAPromotee-TAPromotee-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDCBA7E58D444CE9B4081A2 /* Pods-TAPromotee-TAPromotee-dummy.m */; };
+		8EBEBE2E18933A5AB717C0B1 /* TAPromoteeApp.h in Headers */ = {isa = PBXBuildFile; fileRef = E5917FAF756098199D2366AA /* TAPromoteeApp.h */; };
+		B75BCDA4C92947DB17AFF837 /* Pods-TAPromotee-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BF18E42011EAEA441697B0 /* Pods-TAPromotee-dummy.m */; };
+		C0B06DD29D342FA69E444ED3 /* TAITunesClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D145C73AF8A9E4E7B532FA9 /* TAITunesClient.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FDAE64CF94173DD1A97CE9AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E74D598CB7501C2B87CEED7 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		97315B5233BCFBE68B3248B9 /* PBXContainerItemProxy */ = {
+		D36923A3629F8935E8C746E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F6F9A0A43EDFC2100D97EACA /* Project object */;
+			containerPortal = 1C845BE1754722ECC5813C0D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 863BFFC44C1501835AEEF9C8;
+			remoteGlobalIDString = 405F4BEE95CFC392D0FCF00B;
 			remoteInfo = "Pods-TAPromotee-TAPromotee";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		043778277E6D913487252515 /* NotificationButtonBackground@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationButtonBackground@2x.png"; sourceTree = "<group>"; };
-		1881F6DB9A71EDBD3EAE9B8C /* TSMessagesDefaultDesign.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = TSMessagesDefaultDesign.json; sourceTree = "<group>"; };
-		1D8845E609FCA9CBA6495713 /* Pods-TAPromotee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAPromotee.debug.xcconfig"; sourceTree = "<group>"; };
-		2F82D4C7A12F80E57C4927E5 /* libPods-TAPromotee-TAPromotee.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAPromotee-TAPromotee.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3710C4678E7AC2E2EB5F6C4D /* Pods-TAPromotee-TAPromotee-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAPromotee-TAPromotee-Private.xcconfig"; sourceTree = "<group>"; };
-		39B179E9611E4E191B725EDF /* NotificationButtonBackground.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationButtonBackground.png; sourceTree = "<group>"; };
-		409EA0D59206F655F8BEBA9D /* TAITunesClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TAITunesClient.h; sourceTree = "<group>"; };
-		4168E905E9B24880F048F4BA /* NotificationBackgroundErrorIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundErrorIcon.png; sourceTree = "<group>"; };
-		4DD7B213BE30916BB9513845 /* TACloseButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TACloseButton.m; sourceTree = "<group>"; };
-		4EED276114D4E0A37A5DF204 /* Pods-TAPromotee-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TAPromotee-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5B9636AD3842FA923C1E2673 /* NotificationBackgroundWarning.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundWarning.png; sourceTree = "<group>"; };
-		62F5FFB1DD3A6CC0BB269E90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		62FB0D4F880E06FDFC578DF3 /* NotificationBackgroundMessage.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundMessage.png; sourceTree = "<group>"; };
-		661DC4BB950E10BF63D8F3CA /* TAPromoteeApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TAPromoteeApp.h; sourceTree = "<group>"; };
-		67D9ED2D39C8C3F368D6A69A /* Pods-TAPromotee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAPromotee.release.xcconfig"; sourceTree = "<group>"; };
-		6F8BCF9996E9B8A4E128220B /* Pods-TAPromotee-TAPromotee-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TAPromotee-TAPromotee-dummy.m"; sourceTree = "<group>"; };
-		73F693C321383F1F046F5811 /* NotificationBackgroundErrorIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationBackgroundErrorIcon@2x.png"; sourceTree = "<group>"; };
-		790524212A376C9C129B58A2 /* Pods-TAPromotee-TAPromotee.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAPromotee-TAPromotee.xcconfig"; sourceTree = "<group>"; };
-		792FA61BC622001323CBB5FF /* Pods-TAPromotee-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TAPromotee-environment.h"; sourceTree = "<group>"; };
-		7B899F09E165EF0858D40FA9 /* TAITunesClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TAITunesClient.m; sourceTree = "<group>"; };
-		81865FD5B5B8054B2B2C94E2 /* TAPromoteeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TAPromoteeViewController.h; sourceTree = "<group>"; };
-		8AD283DA0ACD472142BDC665 /* NotificationBackgroundError@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationBackgroundError@2x.png"; sourceTree = "<group>"; };
-		8AD40B09EFC721D3969DE9E0 /* NotificationBackgroundWarningIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationBackgroundWarningIcon@2x.png"; sourceTree = "<group>"; };
-		8E78EB5F84CADD67DF8DD08B /* NotificationBackgroundSuccessIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationBackgroundSuccessIcon@2x.png"; sourceTree = "<group>"; };
-		9D0B11FCA7CD98E9D485E6E7 /* NotificationBackgroundWarningIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundWarningIcon.png; sourceTree = "<group>"; };
-		A770DA6B3CDA18A6675FF133 /* NotificationBackgroundMessage@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationBackgroundMessage@2x.png"; sourceTree = "<group>"; };
-		AAB0AC09BC8D9F588A4A4FFA /* Pods-TAPromotee-TAPromotee-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TAPromotee-TAPromotee-prefix.pch"; sourceTree = "<group>"; };
-		AE1A9E5B4080591E97106466 /* Pods-TAPromotee-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TAPromotee-dummy.m"; sourceTree = "<group>"; };
-		AF115E318D03C468204E5A2B /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B692AC4FCC47911DDB16673E /* NotificationBackgroundSuccessIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundSuccessIcon.png; sourceTree = "<group>"; };
-		C470242F745A19152B3A8EC4 /* TAPromoteeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TAPromoteeViewController.m; sourceTree = "<group>"; };
-		CA9B15C7869F11DE5C4389C0 /* TAPromoteeApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TAPromoteeApp.m; sourceTree = "<group>"; };
-		D19F1E94FDE0B8642DDB3AD3 /* NotificationBackgroundSuccess.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundSuccess.png; sourceTree = "<group>"; };
-		D29CB06CE5A3C3E8DCD84971 /* Pods-TAPromotee-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAPromotee-acknowledgements.plist"; sourceTree = "<group>"; };
-		D682408070D35DF95255C664 /* NotificationBackgroundError.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundError.png; sourceTree = "<group>"; };
-		D709E6BE61870C0F53212E2B /* NotificationBackgroundWarning@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationBackgroundWarning@2x.png"; sourceTree = "<group>"; };
-		E0697C351014E490B8B925B4 /* NotificationBackgroundSuccess@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationBackgroundSuccess@2x.png"; sourceTree = "<group>"; };
-		E2206276BF042A776C6AE030 /* TACloseButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TACloseButton.h; sourceTree = "<group>"; };
-		F4A397B0251D655F2DACB506 /* Pods-TAPromotee-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TAPromotee-resources.sh"; sourceTree = "<group>"; };
-		F5356076A0D5CB49F2175E8E /* libPods-TAPromotee.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAPromotee.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BD38DFE13A99DE514A8EAC /* NotificationBackgroundErrorIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundErrorIcon.png; sourceTree = "<group>"; };
+		0B919F85D3C1F86F92DA0899 /* TAPromotee.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TAPromotee.m; sourceTree = "<group>"; };
+		10D2AF9F59C7E8E11783D119 /* libPods-TAPromotee-TAPromotee.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAPromotee-TAPromotee.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		126C65DDFD870D39178C4E24 /* NotificationBackgroundWarning.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundWarning.png; sourceTree = "<group>"; };
+		15977BAB62DF23742978846E /* NotificationBackgroundErrorIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationBackgroundErrorIcon@2x.png"; sourceTree = "<group>"; };
+		1FCBB71D134DAAD189B9807E /* Pods-TAPromotee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAPromotee.debug.xcconfig"; sourceTree = "<group>"; };
+		1FEE8C7A6937CA1ACDDE8BFD /* NotificationButtonBackground@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationButtonBackground@2x.png"; sourceTree = "<group>"; };
+		2E74D598CB7501C2B87CEED7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		37F7D6724E8AD03F095DAC63 /* TAPromoteeApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TAPromoteeApp.m; sourceTree = "<group>"; };
+		3A16F660928B80BA059A7502 /* Pods-TAPromotee-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TAPromotee-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E12963E4C9CAA60B443DCE4 /* TAITunesClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TAITunesClient.h; sourceTree = "<group>"; };
+		4090AC8D8EE85CAFCA240FC2 /* NotificationBackgroundSuccessIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundSuccessIcon.png; sourceTree = "<group>"; };
+		4564845CBAC2F966A47F9E21 /* TAPromoteeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TAPromoteeViewController.h; sourceTree = "<group>"; };
+		4B3644349C62E77C481E6386 /* Pods-TAPromotee-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TAPromotee-resources.sh"; sourceTree = "<group>"; };
+		4EA81C8FEB49B77476B6639B /* NotificationBackgroundSuccessIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationBackgroundSuccessIcon@2x.png"; sourceTree = "<group>"; };
+		5009CC3C3C56A44C8A9DDB9B /* libPods-TAPromotee.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAPromotee.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D145C73AF8A9E4E7B532FA9 /* TAITunesClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TAITunesClient.m; sourceTree = "<group>"; };
+		5FAC963BE6D0E103C3D1266E /* Pods-TAPromotee-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TAPromotee-environment.h"; sourceTree = "<group>"; };
+		65FB61F2EFEC04FB75B9EDCF /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		75A5D948ABED6E6F71E8EB89 /* TAPromotee.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TAPromotee.h; sourceTree = "<group>"; };
+		76E5FE6EEA194099B274CA94 /* NotificationBackgroundMessage.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundMessage.png; sourceTree = "<group>"; };
+		7E0F6A708724B1A20BD82DF7 /* Pods-TAPromotee-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAPromotee-acknowledgements.plist"; sourceTree = "<group>"; };
+		826011B35B91F1925BA79FEF /* NotificationBackgroundSuccess@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationBackgroundSuccess@2x.png"; sourceTree = "<group>"; };
+		89B4F758227A6A58B3A12066 /* NotificationBackgroundMessage@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationBackgroundMessage@2x.png"; sourceTree = "<group>"; };
+		8ACD287C2C4938A8147C117A /* NotificationButtonBackground.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationButtonBackground.png; sourceTree = "<group>"; };
+		8B9C11AD2769A5E3C837BB65 /* TAPromoteeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TAPromoteeViewController.m; sourceTree = "<group>"; };
+		91BF18E42011EAEA441697B0 /* Pods-TAPromotee-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TAPromotee-dummy.m"; sourceTree = "<group>"; };
+		9289B077D2C01336A62E3A90 /* NotificationBackgroundWarning@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationBackgroundWarning@2x.png"; sourceTree = "<group>"; };
+		960C3EA33499933CDF6AF03D /* Pods-TAPromotee-TAPromotee-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TAPromotee-TAPromotee-prefix.pch"; sourceTree = "<group>"; };
+		975C92A3BAE1B576FC3014C9 /* NotificationBackgroundError@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationBackgroundError@2x.png"; sourceTree = "<group>"; };
+		A76B91FEC1E2A5C8B9343397 /* TACloseButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TACloseButton.m; sourceTree = "<group>"; };
+		A9702F90576C0C629CC7F451 /* NotificationBackgroundWarningIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundWarningIcon.png; sourceTree = "<group>"; };
+		B48D72C5695677D14ACECAD9 /* Pods-TAPromotee-TAPromotee-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAPromotee-TAPromotee-Private.xcconfig"; sourceTree = "<group>"; };
+		B92C595BA483AE705BA93844 /* TACloseButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TACloseButton.h; sourceTree = "<group>"; };
+		BAD3605E84282DD0945CB107 /* NotificationBackgroundSuccess.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundSuccess.png; sourceTree = "<group>"; };
+		C80F6F3C5EF57525F28268FD /* TSMessagesDefaultDesign.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = TSMessagesDefaultDesign.json; sourceTree = "<group>"; };
+		D3A875745798D9BC43826744 /* NotificationBackgroundWarningIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "NotificationBackgroundWarningIcon@2x.png"; sourceTree = "<group>"; };
+		E5917FAF756098199D2366AA /* TAPromoteeApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TAPromoteeApp.h; sourceTree = "<group>"; };
+		E8E087EA551A294847761A5C /* Pods-TAPromotee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAPromotee.release.xcconfig"; sourceTree = "<group>"; };
+		F06D48DB0882D5001479765F /* NotificationBackgroundError.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundError.png; sourceTree = "<group>"; };
+		F700E5FF1CBAC5CBA9496E3E /* Pods-TAPromotee-TAPromotee.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAPromotee-TAPromotee.xcconfig"; sourceTree = "<group>"; };
+		FCDCBA7E58D444CE9B4081A2 /* Pods-TAPromotee-TAPromotee-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TAPromotee-TAPromotee-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6BCC910972362AE1ED0AE1F8 /* Frameworks */ = {
+		36E325ED971087D89B279FFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8899564EA7920624EB987D76 /* Foundation.framework in Frameworks */,
+				4D9579E795D4105BB45B8152 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B910E71EAAFB0EE5E1FDFCE5 /* Frameworks */ = {
+		A3BA9EA1380F9A7C77AE118C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EAD83CB5EA66674812B21A9 /* Foundation.framework in Frameworks */,
+				FDAE64CF94173DD1A97CE9AF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02E3300D779CEC6FFEEB5759 /* Products */ = {
+		100B568E1654143B93E0013F /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				F5356076A0D5CB49F2175E8E /* libPods-TAPromotee.a */,
-				2F82D4C7A12F80E57C4927E5 /* libPods-TAPromotee-TAPromotee.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		207526AF642A7A93C73BE89D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				790524212A376C9C129B58A2 /* Pods-TAPromotee-TAPromotee.xcconfig */,
-				3710C4678E7AC2E2EB5F6C4D /* Pods-TAPromotee-TAPromotee-Private.xcconfig */,
-				6F8BCF9996E9B8A4E128220B /* Pods-TAPromotee-TAPromotee-dummy.m */,
-				AAB0AC09BC8D9F588A4A4FFA /* Pods-TAPromotee-TAPromotee-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-TAPromotee-TAPromotee";
-			sourceTree = "<group>";
-		};
-		340C0C2BB15BBC00B9229BE8 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				98A2954AAD32564788DA393A /* Classes */,
+				FB6013D087C905A1A581498E /* Assets */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		41CA95BC7016CFDD9177F7A9 /* Resources */ = {
+		18335D49FFF1FE3211974A87 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5DB45E95B1EDE6CEC5FF6F67 /* Pod */,
+				4D7017580DE15B247A942F23 /* TAPromotee */,
 			);
-			name = Resources;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		494139325757A09D559810FD /* Frameworks */ = {
+		1B25848F69207247F76C196A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				688C79ACB20C2C5DE1726100 /* iOS */,
+				365FE0ED9BEE32951827203E /* Pods-TAPromotee */,
 			);
-			name = Frameworks;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5DB45E95B1EDE6CEC5FF6F67 /* Pod */ = {
+		1DDC0A9DA760CC012B9E931C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				64375AB876E5A8D8084756B8 /* Assets */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		64375AB876E5A8D8084756B8 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				D682408070D35DF95255C664 /* NotificationBackgroundError.png */,
-				8AD283DA0ACD472142BDC665 /* NotificationBackgroundError@2x.png */,
-				4168E905E9B24880F048F4BA /* NotificationBackgroundErrorIcon.png */,
-				73F693C321383F1F046F5811 /* NotificationBackgroundErrorIcon@2x.png */,
-				62FB0D4F880E06FDFC578DF3 /* NotificationBackgroundMessage.png */,
-				A770DA6B3CDA18A6675FF133 /* NotificationBackgroundMessage@2x.png */,
-				D19F1E94FDE0B8642DDB3AD3 /* NotificationBackgroundSuccess.png */,
-				E0697C351014E490B8B925B4 /* NotificationBackgroundSuccess@2x.png */,
-				B692AC4FCC47911DDB16673E /* NotificationBackgroundSuccessIcon.png */,
-				8E78EB5F84CADD67DF8DD08B /* NotificationBackgroundSuccessIcon@2x.png */,
-				5B9636AD3842FA923C1E2673 /* NotificationBackgroundWarning.png */,
-				D709E6BE61870C0F53212E2B /* NotificationBackgroundWarning@2x.png */,
-				9D0B11FCA7CD98E9D485E6E7 /* NotificationBackgroundWarningIcon.png */,
-				8AD40B09EFC721D3969DE9E0 /* NotificationBackgroundWarningIcon@2x.png */,
-				39B179E9611E4E191B725EDF /* NotificationButtonBackground.png */,
-				043778277E6D913487252515 /* NotificationButtonBackground@2x.png */,
-				1881F6DB9A71EDBD3EAE9B8C /* TSMessagesDefaultDesign.json */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		688C79ACB20C2C5DE1726100 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				62F5FFB1DD3A6CC0BB269E90 /* Foundation.framework */,
+				2E74D598CB7501C2B87CEED7 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		98A2954AAD32564788DA393A /* Classes */ = {
+		365FE0ED9BEE32951827203E /* Pods-TAPromotee */ = {
 			isa = PBXGroup;
 			children = (
-				E2206276BF042A776C6AE030 /* TACloseButton.h */,
-				4DD7B213BE30916BB9513845 /* TACloseButton.m */,
-				409EA0D59206F655F8BEBA9D /* TAITunesClient.h */,
-				7B899F09E165EF0858D40FA9 /* TAITunesClient.m */,
-				661DC4BB950E10BF63D8F3CA /* TAPromoteeApp.h */,
-				CA9B15C7869F11DE5C4389C0 /* TAPromoteeApp.m */,
-				81865FD5B5B8054B2B2C94E2 /* TAPromoteeViewController.h */,
-				C470242F745A19152B3A8EC4 /* TAPromoteeViewController.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		C6A9E801AA1262A56854E16E /* TAPromotee */ = {
-			isa = PBXGroup;
-			children = (
-				340C0C2BB15BBC00B9229BE8 /* Pod */,
-				41CA95BC7016CFDD9177F7A9 /* Resources */,
-				207526AF642A7A93C73BE89D /* Support Files */,
-			);
-			name = TAPromotee;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		D6F669CFEEE058BDAD462062 /* Pods-TAPromotee */ = {
-			isa = PBXGroup;
-			children = (
-				4EED276114D4E0A37A5DF204 /* Pods-TAPromotee-acknowledgements.markdown */,
-				D29CB06CE5A3C3E8DCD84971 /* Pods-TAPromotee-acknowledgements.plist */,
-				AE1A9E5B4080591E97106466 /* Pods-TAPromotee-dummy.m */,
-				792FA61BC622001323CBB5FF /* Pods-TAPromotee-environment.h */,
-				F4A397B0251D655F2DACB506 /* Pods-TAPromotee-resources.sh */,
-				1D8845E609FCA9CBA6495713 /* Pods-TAPromotee.debug.xcconfig */,
-				67D9ED2D39C8C3F368D6A69A /* Pods-TAPromotee.release.xcconfig */,
+				3A16F660928B80BA059A7502 /* Pods-TAPromotee-acknowledgements.markdown */,
+				7E0F6A708724B1A20BD82DF7 /* Pods-TAPromotee-acknowledgements.plist */,
+				91BF18E42011EAEA441697B0 /* Pods-TAPromotee-dummy.m */,
+				5FAC963BE6D0E103C3D1266E /* Pods-TAPromotee-environment.h */,
+				4B3644349C62E77C481E6386 /* Pods-TAPromotee-resources.sh */,
+				1FCBB71D134DAAD189B9807E /* Pods-TAPromotee.debug.xcconfig */,
+				E8E087EA551A294847761A5C /* Pods-TAPromotee.release.xcconfig */,
 			);
 			name = "Pods-TAPromotee";
 			path = "Target Support Files/Pods-TAPromotee";
 			sourceTree = "<group>";
 		};
-		E1C8BB5B6B315F17AB2558B3 /* Targets Support Files */ = {
+		4D7017580DE15B247A942F23 /* TAPromotee */ = {
 			isa = PBXGroup;
 			children = (
-				D6F669CFEEE058BDAD462062 /* Pods-TAPromotee */,
+				502579B1D36068E8B52F1EE1 /* Pod */,
+				7CA10313E0CF33EDE3E3195E /* Resources */,
+				8CCF0DB5FF9FB018A392169B /* Support Files */,
 			);
-			name = "Targets Support Files";
+			name = TAPromotee;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		E3D8AC718548B7A11AD71E73 /* Development Pods */ = {
+		502579B1D36068E8B52F1EE1 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				C6A9E801AA1262A56854E16E /* TAPromotee */,
+				D66743D3E2FB707999FFE5DC /* Classes */,
 			);
-			name = "Development Pods";
+			path = Pod;
 			sourceTree = "<group>";
 		};
-		FF1117F1EAF945B39D190CD8 = {
+		7CA10313E0CF33EDE3E3195E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AF115E318D03C468204E5A2B /* Podfile */,
-				E3D8AC718548B7A11AD71E73 /* Development Pods */,
-				494139325757A09D559810FD /* Frameworks */,
-				02E3300D779CEC6FFEEB5759 /* Products */,
-				E1C8BB5B6B315F17AB2558B3 /* Targets Support Files */,
+				100B568E1654143B93E0013F /* Pod */,
 			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DAA48CA3A0E66852ACF9CEE = {
+			isa = PBXGroup;
+			children = (
+				65FB61F2EFEC04FB75B9EDCF /* Podfile */,
+				18335D49FFF1FE3211974A87 /* Development Pods */,
+				7E7D012D293AD5411B1FF526 /* Frameworks */,
+				B721E6F53160F55E932DF9E1 /* Products */,
+				1B25848F69207247F76C196A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E7D012D293AD5411B1FF526 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DDC0A9DA760CC012B9E931C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CCF0DB5FF9FB018A392169B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F700E5FF1CBAC5CBA9496E3E /* Pods-TAPromotee-TAPromotee.xcconfig */,
+				B48D72C5695677D14ACECAD9 /* Pods-TAPromotee-TAPromotee-Private.xcconfig */,
+				FCDCBA7E58D444CE9B4081A2 /* Pods-TAPromotee-TAPromotee-dummy.m */,
+				960C3EA33499933CDF6AF03D /* Pods-TAPromotee-TAPromotee-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-TAPromotee-TAPromotee";
+			sourceTree = "<group>";
+		};
+		B721E6F53160F55E932DF9E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5009CC3C3C56A44C8A9DDB9B /* libPods-TAPromotee.a */,
+				10D2AF9F59C7E8E11783D119 /* libPods-TAPromotee-TAPromotee.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D66743D3E2FB707999FFE5DC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B92C595BA483AE705BA93844 /* TACloseButton.h */,
+				A76B91FEC1E2A5C8B9343397 /* TACloseButton.m */,
+				3E12963E4C9CAA60B443DCE4 /* TAITunesClient.h */,
+				5D145C73AF8A9E4E7B532FA9 /* TAITunesClient.m */,
+				75A5D948ABED6E6F71E8EB89 /* TAPromotee.h */,
+				0B919F85D3C1F86F92DA0899 /* TAPromotee.m */,
+				E5917FAF756098199D2366AA /* TAPromoteeApp.h */,
+				37F7D6724E8AD03F095DAC63 /* TAPromoteeApp.m */,
+				4564845CBAC2F966A47F9E21 /* TAPromoteeViewController.h */,
+				8B9C11AD2769A5E3C837BB65 /* TAPromoteeViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FB6013D087C905A1A581498E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F06D48DB0882D5001479765F /* NotificationBackgroundError.png */,
+				975C92A3BAE1B576FC3014C9 /* NotificationBackgroundError@2x.png */,
+				05BD38DFE13A99DE514A8EAC /* NotificationBackgroundErrorIcon.png */,
+				15977BAB62DF23742978846E /* NotificationBackgroundErrorIcon@2x.png */,
+				76E5FE6EEA194099B274CA94 /* NotificationBackgroundMessage.png */,
+				89B4F758227A6A58B3A12066 /* NotificationBackgroundMessage@2x.png */,
+				BAD3605E84282DD0945CB107 /* NotificationBackgroundSuccess.png */,
+				826011B35B91F1925BA79FEF /* NotificationBackgroundSuccess@2x.png */,
+				4090AC8D8EE85CAFCA240FC2 /* NotificationBackgroundSuccessIcon.png */,
+				4EA81C8FEB49B77476B6639B /* NotificationBackgroundSuccessIcon@2x.png */,
+				126C65DDFD870D39178C4E24 /* NotificationBackgroundWarning.png */,
+				9289B077D2C01336A62E3A90 /* NotificationBackgroundWarning@2x.png */,
+				A9702F90576C0C629CC7F451 /* NotificationBackgroundWarningIcon.png */,
+				D3A875745798D9BC43826744 /* NotificationBackgroundWarningIcon@2x.png */,
+				8ACD287C2C4938A8147C117A /* NotificationButtonBackground.png */,
+				1FEE8C7A6937CA1ACDDE8BFD /* NotificationButtonBackground@2x.png */,
+				C80F6F3C5EF57525F28268FD /* TSMessagesDefaultDesign.json */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		444319FD5DC6464CADF23D26 /* Headers */ = {
+		57175FEC309E702E51E791D4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BB594D33214561AFF3265B5 /* TACloseButton.h in Headers */,
-				E8BDEEDBD7926DD3472BCFD0 /* TAITunesClient.h in Headers */,
-				6C31ECC239389CEAB1937D55 /* TAPromoteeApp.h in Headers */,
-				D0055CCDD881E544485E7BBD /* TAPromoteeViewController.h in Headers */,
+				2FA200C8EA747DF8C14F82EC /* TACloseButton.h in Headers */,
+				004B43882601A9FE97E00D25 /* TAITunesClient.h in Headers */,
+				214ACD275D3529B52336BDEF /* TAPromotee.h in Headers */,
+				8EBEBE2E18933A5AB717C0B1 /* TAPromoteeApp.h in Headers */,
+				511769F6BFFF9A48BB0A227F /* TAPromoteeViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		863BFFC44C1501835AEEF9C8 /* Pods-TAPromotee-TAPromotee */ = {
+		15F30EC662CC297D6FCFA5DE /* Pods-TAPromotee */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9888E151DF1A23408301766C /* Build configuration list for PBXNativeTarget "Pods-TAPromotee-TAPromotee" */;
+			buildConfigurationList = 71B1136CA40585C229E956AB /* Build configuration list for PBXNativeTarget "Pods-TAPromotee" */;
 			buildPhases = (
-				13C5EDF723E8041AFF0E75C6 /* Sources */,
-				6BCC910972362AE1ED0AE1F8 /* Frameworks */,
-				444319FD5DC6464CADF23D26 /* Headers */,
+				5A77EEAF0AE9DFC978B37CD8 /* Sources */,
+				36E325ED971087D89B279FFE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBCF2B196067CFBB95522A6F /* PBXTargetDependency */,
+			);
+			name = "Pods-TAPromotee";
+			productName = "Pods-TAPromotee";
+			productReference = 5009CC3C3C56A44C8A9DDB9B /* libPods-TAPromotee.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		405F4BEE95CFC392D0FCF00B /* Pods-TAPromotee-TAPromotee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6A974BDC27C429F3B61C14 /* Build configuration list for PBXNativeTarget "Pods-TAPromotee-TAPromotee" */;
+			buildPhases = (
+				6B728014511625DFA39CEA5F /* Sources */,
+				A3BA9EA1380F9A7C77AE118C /* Frameworks */,
+				57175FEC309E702E51E791D4 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -278,120 +302,72 @@
 			);
 			name = "Pods-TAPromotee-TAPromotee";
 			productName = "Pods-TAPromotee-TAPromotee";
-			productReference = 2F82D4C7A12F80E57C4927E5 /* libPods-TAPromotee-TAPromotee.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		DEC53345859E9312814F019D /* Pods-TAPromotee */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F84D3AAD1BDF9688DC546FEA /* Build configuration list for PBXNativeTarget "Pods-TAPromotee" */;
-			buildPhases = (
-				525031C29CC9413044A26B66 /* Sources */,
-				B910E71EAAFB0EE5E1FDFCE5 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EF2A827B7FAC08B6D55B3C74 /* PBXTargetDependency */,
-			);
-			name = "Pods-TAPromotee";
-			productName = "Pods-TAPromotee";
-			productReference = F5356076A0D5CB49F2175E8E /* libPods-TAPromotee.a */;
+			productReference = 10D2AF9F59C7E8E11783D119 /* libPods-TAPromotee-TAPromotee.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F6F9A0A43EDFC2100D97EACA /* Project object */ = {
+		1C845BE1754722ECC5813C0D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = A03FF7F3EA988DB202174237 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 751C5A3B966675E79B720019 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = FF1117F1EAF945B39D190CD8;
-			productRefGroup = 02E3300D779CEC6FFEEB5759 /* Products */;
+			mainGroup = 7DAA48CA3A0E66852ACF9CEE;
+			productRefGroup = B721E6F53160F55E932DF9E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DEC53345859E9312814F019D /* Pods-TAPromotee */,
-				863BFFC44C1501835AEEF9C8 /* Pods-TAPromotee-TAPromotee */,
+				15F30EC662CC297D6FCFA5DE /* Pods-TAPromotee */,
+				405F4BEE95CFC392D0FCF00B /* Pods-TAPromotee-TAPromotee */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		13C5EDF723E8041AFF0E75C6 /* Sources */ = {
+		5A77EEAF0AE9DFC978B37CD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C03E41DCC32C273EC63C4E7C /* Pods-TAPromotee-TAPromotee-dummy.m in Sources */,
-				2B2CCE19500309D1628BBECD /* TACloseButton.m in Sources */,
-				0D713C454B1574E16109C0CC /* TAITunesClient.m in Sources */,
-				DB1BB5D55599C0A6733A7C64 /* TAPromoteeApp.m in Sources */,
-				F06713893236F2EDFE0B4925 /* TAPromoteeViewController.m in Sources */,
+				B75BCDA4C92947DB17AFF837 /* Pods-TAPromotee-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		525031C29CC9413044A26B66 /* Sources */ = {
+		6B728014511625DFA39CEA5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				382E50DA48EBF86257E385E9 /* Pods-TAPromotee-dummy.m in Sources */,
+				6A6ACB289265569E581155D9 /* Pods-TAPromotee-TAPromotee-dummy.m in Sources */,
+				29403BAE49105E7724514D25 /* TACloseButton.m in Sources */,
+				C0B06DD29D342FA69E444ED3 /* TAITunesClient.m in Sources */,
+				06067D6E952DA1E13BD0FE87 /* TAPromotee.m in Sources */,
+				1272976F7C744F2DA7D18894 /* TAPromoteeApp.m in Sources */,
+				53F9F7E6FDE303A63172931C /* TAPromoteeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EF2A827B7FAC08B6D55B3C74 /* PBXTargetDependency */ = {
+		CBCF2B196067CFBB95522A6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-TAPromotee-TAPromotee";
-			target = 863BFFC44C1501835AEEF9C8 /* Pods-TAPromotee-TAPromotee */;
-			targetProxy = 97315B5233BCFBE68B3248B9 /* PBXContainerItemProxy */;
+			target = 405F4BEE95CFC392D0FCF00B /* Pods-TAPromotee-TAPromotee */;
+			targetProxy = D36923A3629F8935E8C746E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05370AC3C94556A71400158B /* Debug */ = {
+		7F5E39D94C4549D1A92D1E5B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D8845E609FCA9CBA6495713 /* Pods-TAPromotee.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		3EA4415AB1EF4D7A71FC2E1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67D9ED2D39C8C3F368D6A69A /* Pods-TAPromotee.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		A9C0BC1902DDADD65A6E88A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3710C4678E7AC2E2EB5F6C4D /* Pods-TAPromotee-TAPromotee-Private.xcconfig */;
+			baseConfigurationReference = B48D72C5695677D14ACECAD9 /* Pods-TAPromotee-TAPromotee-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-TAPromotee-TAPromotee/Pods-TAPromotee-TAPromotee-prefix.pch";
@@ -405,7 +381,7 @@
 			};
 			name = Release;
 		};
-		C746EDB769D470E9078E501B /* Debug */ = {
+		AA0911A6B24BA783E51CDDB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -444,7 +420,23 @@
 			};
 			name = Debug;
 		};
-		C7818892BA5E2CD4C38C50A5 /* Release */ = {
+		BE5AEA0D30F4DE45D4E51972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E087EA551A294847761A5C /* Pods-TAPromotee.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C90D43A3A3B65B034B23EF81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -478,9 +470,9 @@
 			};
 			name = Release;
 		};
-		DBA3FED55A3EEF75129FFA50 /* Debug */ = {
+		CA57E9BBBB5FDC9A97CC5097 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3710C4678E7AC2E2EB5F6C4D /* Pods-TAPromotee-TAPromotee-Private.xcconfig */;
+			baseConfigurationReference = B48D72C5695677D14ACECAD9 /* Pods-TAPromotee-TAPromotee-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-TAPromotee-TAPromotee/Pods-TAPromotee-TAPromotee-prefix.pch";
@@ -494,37 +486,53 @@
 			};
 			name = Debug;
 		};
+		E4FD7A3E684344797BF465D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FCBB71D134DAAD189B9807E /* Pods-TAPromotee.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9888E151DF1A23408301766C /* Build configuration list for PBXNativeTarget "Pods-TAPromotee-TAPromotee" */ = {
+		71B1136CA40585C229E956AB /* Build configuration list for PBXNativeTarget "Pods-TAPromotee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBA3FED55A3EEF75129FFA50 /* Debug */,
-				A9C0BC1902DDADD65A6E88A7 /* Release */,
+				E4FD7A3E684344797BF465D8 /* Debug */,
+				BE5AEA0D30F4DE45D4E51972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A03FF7F3EA988DB202174237 /* Build configuration list for PBXProject "Pods" */ = {
+		751C5A3B966675E79B720019 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C746EDB769D470E9078E501B /* Debug */,
-				C7818892BA5E2CD4C38C50A5 /* Release */,
+				AA0911A6B24BA783E51CDDB9 /* Debug */,
+				C90D43A3A3B65B034B23EF81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F84D3AAD1BDF9688DC546FEA /* Build configuration list for PBXNativeTarget "Pods-TAPromotee" */ = {
+		CA6A974BDC27C429F3B61C14 /* Build configuration list for PBXNativeTarget "Pods-TAPromotee-TAPromotee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				05370AC3C94556A71400158B /* Debug */,
-				3EA4415AB1EF4D7A71FC2E1E /* Release */,
+				CA57E9BBBB5FDC9A97CC5097 /* Debug */,
+				7F5E39D94C4549D1A92D1E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F6F9A0A43EDFC2100D97EACA /* Project object */;
+	rootObject = 1C845BE1754722ECC5813C0D /* Project object */;
 }

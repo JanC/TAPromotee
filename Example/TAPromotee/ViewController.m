@@ -7,10 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "TAPromotee.h"
 #import "TAPromoteeViewController.h"
-#import "TAPromoteeApp.h"
 
-@interface ViewController () <TAPromoteeViewControllerDelegate>
+@interface ViewController () <TAPromoteeDelegate>
 
 @end
 
@@ -20,20 +20,13 @@
 
 -(IBAction) showAddButtonAction
 {
-    TAPromoteeApp *promoteeApp = [TAPromoteeApp appWithAppStoreId:937151343
-                                                          caption:@"Your Battlefield soldier's companion"
-                                                  backgroundImage:[UIImage imageNamed:@"sample-app-background"]];
 
-    [promoteeApp fetchAppStoreResourcesWithCompletion:^(NSError *error) {
+    [TAPromotee setDelegate:self];
 
-        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-
-            TAPromoteeViewController *promoteeViewController = [[TAPromoteeViewController alloc] initWithApp:promoteeApp];
-            promoteeViewController.delegate = self;
-            [self presentViewController:promoteeViewController animated:YES completion:^{ }];
-        }];
-    }];
-
+    [TAPromotee showFromViewController:self
+                                 appId:937151343
+                               caption:@"Your Battlefield soldier's companion"
+                        backgrounImage:[UIImage imageNamed:@"sample-app-background"]];
 
 }
 

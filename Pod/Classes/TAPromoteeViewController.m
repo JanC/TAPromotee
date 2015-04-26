@@ -23,6 +23,7 @@
 
 @property (nonatomic, strong) TAPromoteeApp *promoteeApp;
 
+@property(nonatomic, strong) UIVisualEffectView *visualEffectView;
 @end
 
 @implementation TAPromoteeViewController {
@@ -44,6 +45,7 @@
     [super viewDidLoad];
 
     self.backgroundImageView = [[UIImageView alloc] initWithImage: self.promoteeApp.backgroundImage];
+    self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
 
     self.iconImageView = [[UIImageView alloc] initWithImage: self.promoteeApp.iconImage];
     self.iconImageView.layer.borderColor = [UIColor whiteColor].CGColor;
@@ -77,15 +79,23 @@
     self.captionLabel.text = self.promoteeApp.caption;
     self.captionLabel.font = [UIFont systemFontOfSize:17];
 
+    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+    self.visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blur];
+
+
+
+
 
 
     [self.view addSubview:self.backgroundImageView];
+    [self.view addSubview:self.visualEffectView];
     [self.view addSubview:self.iconImageView];
     [self.view addSubview:self.closeButton];
     [self.view addSubview:self.installButton];
     [self.view addSubview:self.nameLabel];
     [self.view addSubview:self.captionLabel];
     [self.view addSubview:self.priceLabel];
+
 
     self.view.backgroundColor = [UIColor whiteColor];
 
@@ -97,9 +107,19 @@
     self.captionLabel.translatesAutoresizingMaskIntoConstraints = NO;
     self.nameLabel.translatesAutoresizingMaskIntoConstraints = NO;
     self.priceLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    self.visualEffectView.translatesAutoresizingMaskIntoConstraints = NO;
 
 
-    NSDictionary *views = NSDictionaryOfVariableBindings(_closeButton, _installButton, _backgroundImageView, _captionLabel, _priceLabel, _nameLabel, _iconImageView);
+    NSDictionary *views = NSDictionaryOfVariableBindings(
+            _closeButton,
+            _installButton,
+            _backgroundImageView,
+            _captionLabel,
+            _priceLabel,
+            _nameLabel,
+            _iconImageView,
+            _visualEffectView
+    );
     NSDictionary *metrics = @{
             @"TACloseButtonSize" : @60,
             @"TAInstallButtonWidth" : @100,
@@ -118,7 +138,7 @@
                                                           relatedBy:NSLayoutRelationEqual
                                                              toItem:self.view
                                                           attribute:NSLayoutAttributeHeight
-                                                         multiplier:0.5 constant:0]];
+                                                         multiplier:1.0 constant:0]];
 
     // install button bottom center
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.installButton
@@ -188,6 +208,16 @@
 
 
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_iconImageView]-[_nameLabel]-[_priceLabel]-(TAVerticalSpacing)-[_captionLabel]" options:0 metrics:metrics views:views]];
+
+    // Blur: bottom half of the screen
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_visualEffectView]|" options:0 metrics:metrics views:views]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_visualEffectView]|" options:0 metrics:metrics views:views]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.visualEffectView
+                                                          attribute:NSLayoutAttributeHeight
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeHeight
+                                                         multiplier:0.5 constant:0]];
 
 
 
