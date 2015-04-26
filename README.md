@@ -42,7 +42,8 @@ If you don't want to use the App Store screenshot as background, you can spupply
 [TAPromotee showFromViewController:self
                              appId:937151343
                            caption:@"Your Battlefield soldier's companion"
-                   backgroundImage:[UIImage imageNamed:@"sample-app-background"]];```
+                   backgroundImage:[UIImage imageNamed:@"sample-app-background"]];
+```
 
 
 
