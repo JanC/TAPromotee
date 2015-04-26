@@ -45,6 +45,9 @@ If you don't want to use the App Store screenshot as background, you can spupply
                    backgroundImage:[UIImage imageNamed:@"sample-app-background"]];
 ```
 
+## Screens
+
+Here is how it looks like
 
 
 ![](Example/Screens/Screen1.png)
