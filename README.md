@@ -55,3 +55,12 @@ Here is how it looks like
 ![](Example/Screens/Screen2.png)
 
 
+## Author
+
+Jan Chaloupecky, jan.chaloupecky@gmail.com
+
+## License
+
+TAPromotee is available under the MIT license. See the LICENSE file for more info.
+
+
