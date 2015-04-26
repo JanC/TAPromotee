@@ -16,14 +16,14 @@ Pod::Spec.new do |s|
 The notification moves from the top of the screen underneath the navigation bar and stays there for a few seconds, depending on the length of the displayed text. To dismiss a notification before the time runs out, the user can swipe it to the top or just tap it.
 There are 4 different types already set up for you: Success, Error, Warning, Message.
                    DESC
-  s.homepage     = "https://github.com/toursprung/TAPromotee/"
+  s.homepage     = "https://github.com/JanC/TAPromotee.git"
   
   s.license          = 'MIT'
   s.author           = { "Jan Chaloupecky" => "jan.chaloupecky@gmail.com" }
   s.source           = { :git => "https://github.com/JanC/TAPromotee.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/TexTwil'
 
-  s.platform     = :ios, '5.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
