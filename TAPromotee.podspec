@@ -10,11 +10,9 @@
 Pod::Spec.new do |s|
   s.name             = "TAPromotee"
   s.version          = "0.1"
-  s.summary          = "Easy to use and customizable messages/notifications for iOS à la Tweetbot."
+  s.summary          = "Easy to use way to show a cross promotion to a iOS app"
   s.description  = <<-DESC
-                    This framework provides an easy to use class to show little notification views on the top of the screen. (à la Tweetbot). 
-The notification moves from the top of the screen underneath the navigation bar and stays there for a few seconds, depending on the length of the displayed text. To dismiss a notification before the time runs out, the user can swipe it to the top or just tap it.
-There are 4 different types already set up for you: Success, Error, Warning, Message.
+TAPromotee is a pod that allows you to show a cross promotion to a iOS app just by supllying its App Store id. It automatically fetches the info about the app using the iTunes API and dislpays it in a interstitial where the user can install it.
                    DESC
   s.homepage     = "https://github.com/JanC/TAPromotee.git"
   
