@@ -235,8 +235,8 @@
 
 - (void)closeButtonAction:(id)sender
 {
-    if(self.delegate) {
-        [self.delegate promoteeViewControllerDidClose:self];
+    if(self.completion) {
+        self.completion(TAPromoteeUserActionDidClose);
     }
 }
 
@@ -276,8 +276,8 @@
 {
 
    [self dismissViewControllerAnimated:NO completion:^{
-       if(self.delegate) {
-           [self.delegate promoteeViewControllerDidClose:self];
+       if(self.completion) {
+           self.completion(TAPromoteeUserActionDidInstall);
        }
    }];
 }
@@ -290,10 +290,6 @@
     return YES;
 }
 
-- (void)dealloc
-{
-    NSLog(@"dealloc");
-}
 
 
 @end

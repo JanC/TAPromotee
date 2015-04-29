@@ -30,19 +30,51 @@ To run the example project run `pod try TAPromotee`. Or go manual way: clone the
 
 Here's an example of how you should use TAPromotee. 
 
-```objective-c
-[TAPromotee showFromViewController:self
-                             appId:822702909
-                           caption:@"Sun clock in your pocket"];
+```objc
+#import "TAPromotee.h"
 ```
 
-If you don't want to use the App Store screenshot as background, you can spupply a custom background image
+
+
+
+```objc
+[TAPromotee showFromViewController:self 
+                             appId:822702909 
+                           caption:@"Sun clock in your pocket" 
+                        completion:^(TAPromoteeUserAction userAction) {
+    switch (userAction) {
+        case TAPromoteeUserActionDidClose:
+            // The user just closed the add
+            NSLog(@"User did click close");
+            break;
+        case TAPromoteeUserActionDidInstall:
+            // The user did click on the Install button so here you can for example disable the ad for the future
+            NSLog(@"User did click install");
+            break;
+    }
+}];
+    
+```
+
+If you don't want to use the App Store screenshot as background, you can supply a custom background image
 
 ```objective-c
 [TAPromotee showFromViewController:self
                              appId:937151343
                            caption:@"Your Battlefield soldier's companion"
-                   backgroundImage:[UIImage imageNamed:@"sample-app-background"]];
+                   backgroundImage:[UIImage imageNamed:@"sample-app-background"]
+                        completion:^(TAPromoteeUserAction userAction) {
+    switch (userAction) {
+        case TAPromoteeUserActionDidClose:
+            // The user just closed the add
+            NSLog(@"User did click close");
+            break;
+        case TAPromoteeUserActionDidInstall:
+            // The user did click on the Install button so here you can for example disable the ad for the future
+            NSLog(@"User did click install");
+            break;
+    }
+}];
 ```
 
 ## Screens

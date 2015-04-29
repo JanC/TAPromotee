@@ -1,5 +1,5 @@
 PODS:
-  - TAPromotee (0.1)
+  - TAPromotee (0.3)
 
 DEPENDENCIES:
   - TAPromotee (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  TAPromotee: 56d8689b6e980a1daeb875c39d0a80ee8c57539b
+  TAPromotee: caeb81f86bbdeb65f21378cb9e3cd92a3164297f
 
 COCOAPODS: 0.36.0
