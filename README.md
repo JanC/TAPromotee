@@ -28,6 +28,17 @@ pod 'TAPromotee'
 
 To run the example project run `pod try TAPromotee`. Or go manual way: clone the repo.
 
+```objc
+#import "TAPromotee.h"
+```
+
+Set yourself as a delegate to get notified when the user either closed to add or did click on the install button
+
+``` objc
+ [TAPromotee setDelegate:self];
+ 
+```
+
 Here's an example of how you should use TAPromotee. 
 
 ```objective-c
@@ -36,7 +47,7 @@ Here's an example of how you should use TAPromotee.
                            caption:@"Sun clock in your pocket"];
 ```
 
-If you don't want to use the App Store screenshot as background, you can spupply a custom background image
+If you don't want to use the App Store screenshot as background, you can supply a custom background image
 
 ```objective-c
 [TAPromotee showFromViewController:self

@@ -11,27 +11,14 @@
 
 }
 
-+ (instancetype)sharedInstance
+
+
++ (void)showFromViewController:(UIViewController *)viewController appId:(NSInteger)appId caption:(NSString *)caption completion:(TAPromoteeCompletion)completion
 {
-    static TAPromotee *instance;
-    static dispatch_once_t token;
-    dispatch_once(&token, ^{
-        instance = [[TAPromotee alloc] init];
-    });
-    return instance;
+    [self showFromViewController:viewController appId:appId caption:caption backgroundImage:nil completion:completion];
 }
 
-+ (void)setDelegate:(id<TAPromoteeDelegate>)delegate
-{
-    [TAPromotee sharedInstance].delegate = delegate;
-}
-
-+ (void)showFromViewController:(UIViewController *)viewController appId:(NSInteger)appId caption:(NSString *)caption
-{
-    [self showFromViewController:viewController appId:appId caption:caption backgroundImage:nil];
-}
-
-+ (void)showFromViewController:(UIViewController *)viewController appId:(NSInteger)appId caption:(NSString *)caption backgroundImage:(UIImage *)backgroundImage
++ (void)showFromViewController:(UIViewController *)viewController appId:(NSInteger)appId caption:(NSString *)caption backgroundImage:(UIImage *)backgroundImage completion:(TAPromoteeCompletion)completion
 {
     TAPromoteeApp *promoteeApp = [TAPromoteeApp appWithAppStoreId:appId
                                                           caption:caption
@@ -42,7 +29,13 @@
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
 
             TAPromoteeViewController *promoteeViewController = [[TAPromoteeViewController alloc] initWithApp:promoteeApp];
-            promoteeViewController.delegate = [TAPromotee sharedInstance].delegate;
+            promoteeViewController.completion = ^(TAPromoteeUserAction userAction) {
+                [viewController dismissViewControllerAnimated:YES completion:^{
+                    if(completion) {
+                        completion(userAction);
+                    }
+                }];
+            };
             [viewController presentViewController:promoteeViewController animated:YES completion:^{ }];
         }];
     }];

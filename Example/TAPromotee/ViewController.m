@@ -8,9 +8,9 @@
 
 #import "ViewController.h"
 #import "TAPromotee.h"
-#import "TAPromoteeViewController.h"
 
-@interface ViewController () <TAPromoteeDelegate>
+
+@interface ViewController ()
 
 @end
 
@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad
 {
-    [TAPromotee setDelegate:self];
+
     [super viewDidLoad];
 }
 
@@ -28,32 +28,35 @@
 -(IBAction) showAddButtonAction
 {
 
-    [TAPromotee showFromViewController:self
-                                 appId:822702909
-                               caption:@"Sun clock in your pocket"];
+    [TAPromotee showFromViewController:self appId:822702909 caption:@"Sun clock in your pocket" completion:^(TAPromoteeUserAction userAction) {
+        [self handleUserAction:userAction];
+    }];
 
 }
 
--(IBAction) showWithCustomBackgroundAction
+- (IBAction)showWithCustomBackgroundAction
 {
-
-[TAPromotee showFromViewController:self
-                             appId:937151343
-                           caption:@"Your Battlefield soldier's companion"
-                   backgroundImage:[UIImage imageNamed:@"sample-app-background"]];
+    [TAPromotee showFromViewController:self appId:937151343 caption:@"Your Battlefield soldier's companion" backgroundImage:[UIImage imageNamed:@"sample-app-background"] completion:^(TAPromoteeUserAction userAction) {
+        [self handleUserAction:userAction];
+    }];
 }
 
-#pragma mark - TAPromoteeViewControllerDelegate
-
-- (void)promoteeViewControllerFinish:(TAPromoteeViewController *)viewController
+#pragma mark - Helper
+-(void) handleUserAction:(TAPromoteeUserAction) userAction
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    switch (userAction) {
+        case TAPromoteeUserActionDidClose:
+            // The user just closed the add
+            NSLog(@"User did click close");
+            break;
+        case TAPromoteeUserActionDidInstall:
+            // The user did click on the Install button so here you can for example disable the ad for the future
+            NSLog(@"User did click install");
+            break;
+    }
 }
 
-- (void)promoteeViewControllerDidClose:(TAPromoteeViewController *)viewController
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+
 
 
 

@@ -4,21 +4,17 @@
 
 #import <Foundation/Foundation.h>
 
+#import "TAPromotee.h"
+
 @class TAPromoteeViewController;
 @class TAPromoteeApp;
 
-@protocol TAPromoteeDelegate <NSObject>
 
-- (void)promoteeViewControllerFinish:(TAPromoteeViewController *)viewController;
-- (void)promoteeViewControllerDidClose:(TAPromoteeViewController *)viewController;
-
-@end
 
 @interface TAPromoteeViewController : UIViewController
 
 
-
-@property (nonatomic, weak) id<TAPromoteeDelegate> delegate;
+@property (nonatomic, copy) TAPromoteeCompletion completion;
 
 - (instancetype)initWithApp:(TAPromoteeApp *)promoteeApp;
 
