@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TAPromotee"
-  s.version          = "0.1"
+  s.version          = "0.3"
   s.summary          = "Easy to use way to show a cross promotion to a iOS app"
   s.description  = <<-DESC
 TAPromotee is a pod that allows you to show a cross promotion to a iOS app just by supllying its App Store id. It automatically fetches the info about the app using the iTunes API and dislpays it in a interstitial where the user can install it.
