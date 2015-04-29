@@ -95,4 +95,7 @@ Jan Chaloupecky, jan.chaloupecky@gmail.com
 
 TAPromotee is available under the MIT license. See the LICENSE file for more info.
 
+## Changelog
+See the [release](https://github.com/JanC/TAPromotee/releases) section
+
 
