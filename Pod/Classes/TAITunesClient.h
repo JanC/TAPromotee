@@ -8,5 +8,5 @@ typedef void (^TAAppInfoCompletionBlock)(NSDictionary *response, NSError *error)
 
 @interface TAITunesClient : NSObject
 
--(void) fetchInfoForAppId:(NSInteger) appId completion:(TAAppInfoCompletionBlock) completion;
+- (void)fetchInfoForAppId:(NSInteger)appId country:(NSString *)country completion:(TAAppInfoCompletionBlock)completion;
 @end
