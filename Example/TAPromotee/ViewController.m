@@ -31,6 +31,7 @@
     // 361309726  Pages
     // 284882215  Facebook
     // 822702909  Daylight
+    // 355833469  App with long name
     [TAPromotee showFromViewController:self appId:822702909 caption:@"Sun clock in your pocket" completion:^(TAPromoteeUserAction userAction) {
         [self handleUserAction:userAction];
     }];
