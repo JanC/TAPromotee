@@ -1,8 +1,9 @@
 # TAPromotee
-TAPromotee is a pod that allows you to show a cross promotion to a iOS app just by supllying its App Store id. It automatically fetches the info about the app using the iTunes API:
+TAPromotee is a pod that allows you to show a cross promotion to a iOS app just by supplying its App Store id. It automatically fetches the info about the app using the iTunes API:
 
-- App Name
-- App Icon
+- App name
+- App icon
+- App price
 - Screenshot 
 
 When the user taps the install button, the `SKStoreProductViewController` is presented.
@@ -10,7 +11,6 @@ When the user taps the install button, the `SKStoreProductViewController` is pre
 
 ## Requirements
 
-- ARC only
 - iOS 8.0+
 - iPhone
 - Portrait orientation
@@ -26,7 +26,7 @@ pod 'TAPromotee'
 
 ## Usage
 
-To run the example project run `pod try TAPromotee`. Or go manual way: clone the repo.
+To run the example project run `pod try TAPromotee` or clone the repo.
 
 Here's an example of how you should use TAPromotee. 
 
@@ -89,7 +89,7 @@ Here is how it looks like
 
 ## Author
 
-Jan Chaloupecky, jan.chaloupecky@gmail.com
+Jan Chaloupecky
 
 ## License
 
