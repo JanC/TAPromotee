@@ -70,6 +70,8 @@
     self.nameLabel = [[UILabel alloc] init];
     self.nameLabel.text = self.promoteeApp.name;
     self.nameLabel.font = [UIFont boldSystemFontOfSize:22];
+    self.nameLabel.numberOfLines = 0;
+    self.nameLabel.textAlignment = NSTextAlignmentCenter;
 
     self.priceLabel = [[UILabel alloc] init];
     self.priceLabel.text = [NSString stringWithFormat:@"%@ - available on the App Store", self.promoteeApp.price];
@@ -78,6 +80,8 @@
     self.captionLabel = [[UILabel alloc] init];
     self.captionLabel.text = self.promoteeApp.caption;
     self.captionLabel.font = [UIFont systemFontOfSize:17];
+    self.captionLabel.numberOfLines = 0;
+    self.captionLabel.textAlignment = NSTextAlignmentCenter;
 
     UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
     self.visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blur];
@@ -204,6 +208,10 @@
                                                              toItem:self.view
                                                           attribute:NSLayoutAttributeCenterX
                                                          multiplier:1.0 constant:0]];
+
+    // labels margin
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_nameLabel]-|" options:0 metrics:metrics views:views]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_captionLabel]-|" options:0 metrics:metrics views:views]];
 
 
 
