@@ -11,7 +11,7 @@ When the user taps the install button, the `SKStoreProductViewController` is pre
 
 ## Requirements
 
-- iOS 8.0+
+- iOS 7.0+
 - iPhone
 - Portrait orientation
 
