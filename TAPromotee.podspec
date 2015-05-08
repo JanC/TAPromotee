@@ -21,7 +21,7 @@ TAPromotee is a pod that allows you to show a cross promotion to a iOS app just 
   s.source           = { :git => "https://github.com/JanC/TAPromotee.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/TexTwil'
 
-  s.platform     = :ios, '6.0'
+  s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
