@@ -1,14 +1,17 @@
 PODS:
-  - TAPromotee (0.3.1)
+  - FXBlurView (1.6.3)
+  - TAPromotee (0.4.0):
+    - FXBlurView
 
 DEPENDENCIES:
   - TAPromotee (from `../`)
 
 EXTERNAL SOURCES:
   TAPromotee:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  TAPromotee: 656c7190fe7ab99c226b096bb305587744f9b7d3
+  FXBlurView: c6d23f3d35af2c6282296a2930f61c6e2c788d01
+  TAPromotee: 36d6dabcd1d142e9823d767ec3b4ead86d1e9488
 
-COCOAPODS: 0.37.0
+COCOAPODS: 0.37.1
