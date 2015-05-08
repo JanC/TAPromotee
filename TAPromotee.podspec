@@ -27,7 +27,7 @@ TAPromotee is a pod that allows you to show a cross promotion to a iOS app just 
   s.source_files = 'Pod/Classes'
   s.resources = ['Pod/Assets/*.png', 'Pod/Assets/*.json']
 
-  s.dependencies = ['FXBlurView']
+  s.dependencies = {'FXBlurView' => '~> 1.6'}
 
   s.public_header_files = 'Pod/Classes/**/*.h'
 end
