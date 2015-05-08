@@ -5,6 +5,7 @@
 #import "TAPromoteeViewController.h"
 #import "TAPromoteeApp.h"
 #import "TACloseButton.h"
+#import "FXBlurView.h"
 
 @import StoreKit;
 
@@ -23,7 +24,7 @@
 
 @property (nonatomic, strong) TAPromoteeApp *promoteeApp;
 
-@property(nonatomic, strong) UIVisualEffectView *visualEffectView;
+@property(nonatomic, strong) UIView *visualEffectView;
 @end
 
 @implementation TAPromoteeViewController {
@@ -83,8 +84,16 @@
     self.captionLabel.numberOfLines = 0;
     self.captionLabel.textAlignment = NSTextAlignmentCenter;
 
-    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
-    self.visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blur];
+//    if ([UIVisualEffectView class]) {
+//        UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+//        self.visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blur];
+//    } else {
+        FXBlurView * visualEffectView = [[FXBlurView alloc] init];
+//    visualEffectView.blurRadius = 1.8;
+    self.visualEffectView = visualEffectView;
+//    }
+
+
 
 
 
