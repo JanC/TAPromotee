@@ -1,4 +1,8 @@
 # TAPromotee
+
+[![Version](https://img.shields.io/cocoapods/v/TAPromotee.svg?style=flat)](http://cocoapods.org/pods/AbTrackingLib)
+
+
 TAPromotee is a pod that allows you to show a cross promotion to a iOS app just by supplying its App Store id. It automatically fetches the info about the app using the iTunes API:
 
 - App name
