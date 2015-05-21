@@ -84,14 +84,14 @@
     self.captionLabel.numberOfLines = 0;
     self.captionLabel.textAlignment = NSTextAlignmentCenter;
 
-//    if ([UIVisualEffectView class]) {
-//        UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
-//        self.visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blur];
-//    } else {
-        FXBlurView * visualEffectView = [[FXBlurView alloc] init];
-//    visualEffectView.blurRadius = 1.8;
-    self.visualEffectView = visualEffectView;
-//    }
+    if ([UIVisualEffectView class]) {
+        UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+        self.visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blur];
+    } else {
+        FXBlurView *visualEffectView = [[FXBlurView alloc] init];
+
+        self.visualEffectView = visualEffectView;
+    }
 
 
 
