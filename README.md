@@ -18,6 +18,15 @@ When the user taps the install button, the `SKStoreProductViewController` is pre
 - iOS 7.0+
 - iPhone
 - Portrait orientation
+- The iTunes API references the images via http so you have to disable ATS in your app. In your plist
+
+```
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+```
 
 ## Install
 
