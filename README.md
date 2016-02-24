@@ -102,7 +102,7 @@ Here is how it looks like
 
 ## Author
 
-Jan Chaloupecky
+Jan Chaloupecky [@TexTwil](https://twitter.com/TexTwil)
 
 ## License
 
