@@ -15,6 +15,7 @@ When the user taps the install button, the `SKStoreProductViewController` is pre
 - iPhone
 - Portrait orientation
 
+
 ## Install
 
 TAPromotee is available through [CocoaPods](http://cocoapods.org), to install
