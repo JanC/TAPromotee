@@ -9,6 +9,7 @@ TAPromotee is a pod that allows you to show a cross promotion to a iOS app just 
 - App icon
 - App price
 - Screenshot 
+- Test
 
 When the user taps the install button, the `SKStoreProductViewController` is presented.
 
