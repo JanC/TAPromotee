@@ -39,7 +39,7 @@
 - (void)fetchAppStoreResourcesWithCompletion:(TAPromoteeAppCompletionBlock)completion
 {
     TAITunesClient *itunesClient = [[TAITunesClient alloc] init];
-    [itunesClient fetchInfoForAppId:self.appStoreId country:[self getUserCountry] completion:^(NSDictionary *response, NSError *error) {
+    [itunesClient fetchInfoForAppId:self.appStoreId completion:^(NSDictionary *response, NSError *error) {
         // get the image
         if (error) {
             completion(error);
@@ -86,14 +86,6 @@
 - (NSString *)affiliateToken
 {
     return _affiliateToken ? _affiliateToken : @"";
-}
-
-#pragma mark - Helper
-
-- (NSString *)getUserCountry
-{
-    NSLocale *locale = [NSLocale currentLocale];
-    return [locale objectForKey: NSLocaleCountryCode];
 }
 
 

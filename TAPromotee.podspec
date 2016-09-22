@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TAPromotee"
-  s.version          = "0.4.1"
+  s.version          = "0.3"
   s.summary          = "Easy to use way to show a cross promotion to a iOS app"
   s.description  = <<-DESC
 TAPromotee is a pod that allows you to show a cross promotion to a iOS app just by supllying its App Store id. It automatically fetches the info about the app using the iTunes API and dislpays it in a interstitial where the user can install it.
@@ -21,13 +21,11 @@ TAPromotee is a pod that allows you to show a cross promotion to a iOS app just 
   s.source           = { :git => "https://github.com/JanC/TAPromotee.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/TexTwil'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
   s.resources = ['Pod/Assets/*.png', 'Pod/Assets/*.json']
-
-  s.dependencies = {'FXBlurView' => '~> 1.6'}
 
   s.public_header_files = 'Pod/Classes/**/*.h'
 end

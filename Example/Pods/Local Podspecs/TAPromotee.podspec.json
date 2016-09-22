@@ -1,6 +1,6 @@
 {
   "name": "TAPromotee",
-  "version": "0.4.0",
+  "version": "0.3",
   "summary": "Easy to use way to show a cross promotion to a iOS app",
   "description": "TAPromotee is a pod that allows you to show a cross promotion to a iOS app just by supllying its App Store id. It automatically fetches the info about the app using the iTunes API and dislpays it in a interstitial where the user can install it.\n",
   "homepage": "https://github.com/JanC/TAPromotee.git",
@@ -10,20 +10,17 @@
   },
   "source": {
     "git": "https://github.com/JanC/TAPromotee.git",
-    "tag": "0.4.0"
+    "tag": "0.3"
   },
   "social_media_url": "https://twitter.com/TexTwil",
   "platforms": {
-    "ios": "6.0"
+    "ios": "8.0"
   },
   "requires_arc": true,
   "source_files": "Pod/Classes",
   "resources": [
     "Pod/Assets/*.png",
     "Pod/Assets/*.json"
-  ],
-  "dependencies": [
-    "FXBlurView"
   ],
   "public_header_files": "Pod/Classes/**/*.h"
 }
