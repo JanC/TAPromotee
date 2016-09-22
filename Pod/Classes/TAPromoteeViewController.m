@@ -5,6 +5,7 @@
 #import "TAPromoteeViewController.h"
 #import "TAPromoteeApp.h"
 #import "TACloseButton.h"
+#import "FXBlurView.h"
 
 @import StoreKit;
 
@@ -23,7 +24,7 @@
 
 @property (nonatomic, strong) TAPromoteeApp *promoteeApp;
 
-@property(nonatomic, strong) UIVisualEffectView *visualEffectView;
+@property(nonatomic, strong) UIView *visualEffectView;
 @end
 
 @implementation TAPromoteeViewController {
@@ -70,6 +71,8 @@
     self.nameLabel = [[UILabel alloc] init];
     self.nameLabel.text = self.promoteeApp.name;
     self.nameLabel.font = [UIFont boldSystemFontOfSize:22];
+    self.nameLabel.numberOfLines = 0;
+    self.nameLabel.textAlignment = NSTextAlignmentCenter;
 
     self.priceLabel = [[UILabel alloc] init];
     self.priceLabel.text = [NSString stringWithFormat:@"%@ - available on the App Store", self.promoteeApp.price];
@@ -78,9 +81,19 @@
     self.captionLabel = [[UILabel alloc] init];
     self.captionLabel.text = self.promoteeApp.caption;
     self.captionLabel.font = [UIFont systemFontOfSize:17];
+    self.captionLabel.numberOfLines = 0;
+    self.captionLabel.textAlignment = NSTextAlignmentCenter;
 
-    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
-    self.visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blur];
+    if ([UIVisualEffectView class]) {
+        UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+        self.visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blur];
+    } else {
+        FXBlurView *visualEffectView = [[FXBlurView alloc] init];
+
+        self.visualEffectView = visualEffectView;
+    }
+
+
 
 
 
@@ -204,6 +217,10 @@
                                                              toItem:self.view
                                                           attribute:NSLayoutAttributeCenterX
                                                          multiplier:1.0 constant:0]];
+
+    // labels margin
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_nameLabel]-|" options:0 metrics:metrics views:views]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_captionLabel]-|" options:0 metrics:metrics views:views]];
 
 
 
