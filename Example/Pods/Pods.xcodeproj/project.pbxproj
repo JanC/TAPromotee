@@ -20,6 +20,7 @@
 		59FDAB78BECE58B70E1CC8E6 /* TAPromoteeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A92AF6D2830E3EAEBDCCCD8 /* TAPromoteeViewController.h */; };
 		5C0C740774A303607E4461AE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DDD28226B3D526FA4126B7 /* QuartzCore.framework */; };
 		644D2B1D2365669F82BA62F2 /* TAPromoteeApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 36E94D7F349DFFAC4CD4D26D /* TAPromoteeApp.h */; };
+		81460F6F1FA60B4000C70D70 /* TAStoreProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F6E1FA60B4000C70D70 /* TAStoreProductViewController.m */; };
 		86995112A28D8AA135549369 /* Pods-TAPromotee-TAPromotee-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E086460CB30A2AF4405D37 /* Pods-TAPromotee-TAPromotee-dummy.m */; };
 		B220DBD9E1EB733893CFA180 /* Pods-TAPromotee-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 247B7D2A053E68BA6B91A325 /* Pods-TAPromotee-dummy.m */; };
 		BA47C9215D1E20659DF98AF5 /* TAITunesClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CEA0948A65077D85058E50 /* TAITunesClient.m */; };
@@ -84,6 +85,8 @@
 		79CEA0948A65077D85058E50 /* TAITunesClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TAITunesClient.m; sourceTree = "<group>"; };
 		7EFB99DCC645B51A7C3DC3B4 /* TAPromoteeApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TAPromoteeApp.m; sourceTree = "<group>"; };
 		80504EA5066F30C84CACF48B /* Pods-TAPromotee-FXBlurView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TAPromotee-FXBlurView-dummy.m"; sourceTree = "<group>"; };
+		81460F6D1FA60B4000C70D70 /* TAStoreProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAStoreProductViewController.h; sourceTree = "<group>"; };
+		81460F6E1FA60B4000C70D70 /* TAStoreProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAStoreProductViewController.m; sourceTree = "<group>"; };
 		896C9F3FE89E69D90011169C /* FXBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXBlurView.h; path = FXBlurView/FXBlurView.h; sourceTree = "<group>"; };
 		8B0A39E307F20273DB3E8966 /* Pods-TAPromotee-TAPromotee-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TAPromotee-TAPromotee-prefix.pch"; sourceTree = "<group>"; };
 		91533A68B04EDA64EC82AAD0 /* NotificationBackgroundWarning.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = NotificationBackgroundWarning.png; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 				7EFB99DCC645B51A7C3DC3B4 /* TAPromoteeApp.m */,
 				6A92AF6D2830E3EAEBDCCCD8 /* TAPromoteeViewController.h */,
 				AC50C6FDF3ECAD499591D4B9 /* TAPromoteeViewController.m */,
+				81460F6D1FA60B4000C70D70 /* TAStoreProductViewController.h */,
+				81460F6E1FA60B4000C70D70 /* TAStoreProductViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -460,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B220DBD9E1EB733893CFA180 /* Pods-TAPromotee-dummy.m in Sources */,
+				81460F6F1FA60B4000C70D70 /* TAStoreProductViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

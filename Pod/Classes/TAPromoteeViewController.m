@@ -6,6 +6,7 @@
 #import "TAPromoteeApp.h"
 #import "TACloseButton.h"
 #import "FXBlurView.h"
+#import "TAStoreProductViewController.h"
 
 @import StoreKit;
 
@@ -271,7 +272,7 @@
     [self.installButton setTitle:@"Opening..." forState:UIControlStateNormal];
     self.installButton.enabled = NO;
 
-    SKStoreProductViewController* storeViewController = [[SKStoreProductViewController alloc] init];
+    TAStoreProductViewController* storeViewController = [[TAStoreProductViewController alloc] init];
     storeViewController.delegate = self;
     NSDictionary *parameters = @{
             SKStoreProductParameterITunesItemIdentifier : @(self.promoteeApp.appStoreId),
